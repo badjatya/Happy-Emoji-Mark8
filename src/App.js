@@ -1,25 +1,82 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
-function App() {
+// Importing image
+import emojiImage from "./img/emoji.png";
+
+const emojiDictionary = {
+  "😊": "Smiling",
+  "😳": "disbelief",
+  "😔": "sad",
+  "🥡": "takeout box",
+  "❤️": "love",
+  "😑": "annoyance",
+};
+
+const emojiList = Object.keys(emojiDictionary);
+
+const App = () => {
+  const [emoji, setEmoji] = useState(null);
+  const [emojiMean, setEmojiMean] = useState("Translation Will Appear Here...");
+
+  const onChangeHandler = (event) => {
+    const inputEmoji = event.target.value;
+    setEmoji(inputEmoji);
+    if (inputEmoji in emojiDictionary) {
+      setEmojiMean(emojiDictionary[inputEmoji]);
+    } else {
+      setEmojiMean("failure to recognize this emoji");
+    }
+  };
+
+  const clickEventHandler = (emoji) => {
+    setEmoji(emoji);
+    setEmojiMean(emojiDictionary[emoji]);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Happy Emoji</h1>
       </header>
+
+      <main>
+        <div className="left-col">
+          <img src={emojiImage} alt="Emoji" />
+        </div>
+        <div className="right-col">
+          <input
+            type="text"
+            placeholder="Enter 😊..."
+            onChange={onChangeHandler}
+          />
+          <p>
+            {emoji} {emojiMean}
+          </p>
+
+          <div className="emojiListContainer">
+            {emojiList.map((emoji) => (
+              <span key={emoji} onClick={() => clickEventHandler(emoji)}>
+                {emoji}
+              </span>
+            ))}
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>Designed By Badjatya ❤️</p>
+        <a href="https://www.linkedin.com/in/badjatya/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/ArchitBadjatya">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/badjatya">
+          <i class="fab fa-github"></i>
+        </a>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;

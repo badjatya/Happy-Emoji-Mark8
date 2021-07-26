@@ -1,38 +1,101 @@
-.App {
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #fff52a;
+  --secondary: #422057ff;
+}
+
+header {
+  width: 1024px;
+  max-width: 1024px;
+  background-color: var(--primary);
   text-align: center;
+  margin: auto;
+  padding: 0.3rem;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
+  width: 1024px;
+  max-width: 1024px;
+  margin: 100px auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left-col,
+.right-col {
+  flex-basis: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-col img {
+  width: 85%;
+  height: 85%;
+}
+
+main input {
+  width: 100%;
+  height: 30px;
+  padding: 30px 30px;
+  outline: none;
+  border: 2px dashed var(--secondary);
+  font-size: 1.5rem;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.emojiListContainer {
+  text-align: center;
+  width: 100%;
+}
+
+span {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 8px;
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+
+footer {
+  width: 1024px;
+  max-width: 1024px;
+  background-color: var(--primary);
+  text-align: center;
+  margin: auto;
+  padding: 0.3rem 0.3rem 0.5rem 0.3rem;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  padding: 10px;
 }
