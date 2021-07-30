@@ -6,11 +6,11 @@ import emojiImage from "./img/emoji.png";
 
 const emojiDictionary = {
   "😊": "Smiling",
-  "😳": "disbelief",
-  "😔": "sad",
-  "🥡": "takeout box",
-  "❤️": "love",
-  "😑": "annoyance",
+  "😳": "Disbelief",
+  "😔": "Sad",
+  "🥡": "Takeout Box",
+  "❤️": "Love",
+  "😑": "Annoyance",
 };
 
 const emojiList = Object.keys(emojiDictionary);
