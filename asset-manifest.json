@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Happy-Emoji-Mark8/static/css/main.171e3e35.chunk.css",
+    "main.js": "/Happy-Emoji-Mark8/static/js/main.5f253b01.chunk.js",
+    "main.js.map": "/Happy-Emoji-Mark8/static/js/main.5f253b01.chunk.js.map",
+    "runtime-main.js": "/Happy-Emoji-Mark8/static/js/runtime-main.99dc4298.js",
+    "runtime-main.js.map": "/Happy-Emoji-Mark8/static/js/runtime-main.99dc4298.js.map",
+    "static/js/2.a6f4c50b.chunk.js": "/Happy-Emoji-Mark8/static/js/2.a6f4c50b.chunk.js",
+    "static/js/2.a6f4c50b.chunk.js.map": "/Happy-Emoji-Mark8/static/js/2.a6f4c50b.chunk.js.map",
+    "index.html": "/Happy-Emoji-Mark8/index.html",
+    "static/css/main.171e3e35.chunk.css.map": "/Happy-Emoji-Mark8/static/css/main.171e3e35.chunk.css.map",
+    "static/js/2.a6f4c50b.chunk.js.LICENSE.txt": "/Happy-Emoji-Mark8/static/js/2.a6f4c50b.chunk.js.LICENSE.txt",
+    "static/media/emoji.d9abcebd.png": "/Happy-Emoji-Mark8/static/media/emoji.d9abcebd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99dc4298.js",
+    "static/js/2.a6f4c50b.chunk.js",
+    "static/css/main.171e3e35.chunk.css",
+    "static/js/main.5f253b01.chunk.js"
+  ]
+}
